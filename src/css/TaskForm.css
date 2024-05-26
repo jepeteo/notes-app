@@ -1,0 +1,24 @@
+.taskForm input[type="text"] {
+    font-family: var(--fonts);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    color: var(--text-light);
+    padding: 8px;
+    margin: 8px 0 24px;
+    display: inline-block;
+    border: 0px solid #000;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    width: -webkit-fill-available;
+
+
+}
+
+.taskForm input[type="text"]:focus-visible {
+    border-bottom: 1px solid #080;
+    outline: none;
+}
+
+.light-mode .taskForm input[type="text"] {
+    color: #000c;
+}

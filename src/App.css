@@ -1,0 +1,93 @@
+:root {
+    font-family: system-ui;
+    /* Colors */
+    --bg-dark: #162432;
+    --bg-light: #f4f8ff;
+    --text-dark: #162432;
+    --text-light: #f4f8ff;
+    --border-dark: #162432;
+    --border-light: #f4f8ff;
+
+    /* Text */
+    --fonts: system-ui;
+    --font-size: 1rem;
+    --line-height: 1.5rem;
+    --font-weight: 400;
+
+
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    height: 100%;
+}
+
+#root,
+.light-mode,
+.dark-mode {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+.light-mode {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    transition:
+        color 0.25s ease-in-out,
+        background-color 0.25s ease-in-out;
+}
+
+.dark-mode {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    transition:
+        color 0.25s ease-in-out,
+        background-color 0.25s ease-in-out;
+}
+
+/* Dark Mode Button */
+.switch.on,
+.switch.off {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 72px;
+    border: 1px solid #0002;
+    border-radius: 48px;
+    padding: 2px;
+}
+
+.switch.on {
+    background-color: var(--bg-dark);
+}
+
+.switch.on span {
+    display: flex;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 36px;
+    background-color: var(--bg-light);
+    transition:
+        margin-left 0.25s ease-in-out,
+        background-color 0.25s ease-in-out;
+}
+
+.switch.off span {
+    display: flex;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 36px;
+    background-color: var(--bg-dark);
+    margin-left: 30px;
+    transition:
+        margin-left 0.25s ease-in-out,
+        background-color 0.25s ease-in-out;
+}

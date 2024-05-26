@@ -1,0 +1,8 @@
+/* Task List */
+.task-list {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    width: max(40vw, 320px);
+    margin: 0 auto auto;
+}
