@@ -4,6 +4,8 @@ import Header from './components/Header'
 import TaskList from './components/TaskList'
 import TaskForm from './components/TaskForm'
 import Footer from './components/Footer'
+import icon_sun from '/src/assets/sun1.png'
+import icon_moon from '/src/assets/half-moon.png'
 import { nanoid } from 'nanoid'
 
 function App() {
@@ -58,20 +60,7 @@ function App() {
         <div className={darkMode ? "dark-mode" : "light-mode"}>
             <Header />
             <button className={`switch ${darkMode ? "off" : "on"}`} onClick={toggleDarkMode}>
-                <span
-                    className="switch--icon"
-                    style={{
-                        backgroundImage: `url(${darkMode ?
-                            '/src/assets/half-moon.png'
-                            :
-                            '/src/assets/sun1.png'
-                            })`,
-                        backgroundRepeat: "no-repeat",
-                        backgroundPosition: "center",
-                        backgroundSize: "contain"
-
-                    }}
-                >
+                <span className="switch--icon" >
                 </span>
             </button>
             <div className="task-list">

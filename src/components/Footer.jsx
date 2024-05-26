@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/Footer.css";
+import icon_react from "/src/assets/react.png";
 
 export default function Footer() {
     return (
@@ -7,7 +8,7 @@ export default function Footer() {
             <div className="footer--copyright">2024 © Theodoros M.</div>
             <div className="footer--made-with">
                 Made with React!
-                <img src="src/assets/react.png" alt="React Logo" />
+                <img src={icon_react} alt="React Logo" />
             </div>
         </footer>
     );
